@@ -9,17 +9,12 @@ ikinciKullanıcı=[]
 seviye=1
 
 
-
-
 def listeYazG():
 
     birinciKullanıcı.append("green")
     if len(birinciKullanıcı) == seviye:
         disabled()
         enabled2()
-
-
-
 
 
 def listeyeYazY():
@@ -30,8 +25,6 @@ def listeyeYazY():
         enabled2()
 
 
-
-
 def listeYazB():
     global seviye
     birinciKullanıcı.append("blue")
@@ -40,23 +33,12 @@ def listeYazB():
         enabled2()
 
 
-
-
 def listeYazR():
     global seviye
     birinciKullanıcı.append("red")
     if len(birinciKullanıcı) == seviye:
         disabled()
         enabled2()
-
-
-
-
-
-
-
-
-
 
 def listeYazG2():
     global seviye
@@ -136,15 +118,6 @@ def listeYazR2():
             pencere1.geometry("300x100")
             pencere1.after(3000, pencere1.destroy)
             Label(pencere1, text= "Yanlış yol izlediniz. \n Oyun bitti. \n \n Skor=" + str(seviye-1)).grid(padx=100, pady=25)
-
-
-
-
-
-# def yazdır():
-#     print(birinciKullanıcı)
-
-
 
 butonG = Button(pencere, height=10, width=15, bg="green",command=listeYazG)
 butonG.grid(row=1, column=0)
